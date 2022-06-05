@@ -58,6 +58,7 @@ body {
 
 .group:nth-child(1) {
     min-height: 19rem;
+    margin-bottom: 10px;
 }
 
 .instagram-logo {
