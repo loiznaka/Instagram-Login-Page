@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color List */
+:root {
+    --bg-color: #FFFFFF;
+    --bg-login-color: #4db4f9;
+    --spacer-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'Instagram Sans Headline Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Instagram Sans Headline Regular'), url('../../assets/fonts/Instagram\ Sans\ Headline.woff') format('woff');
+}
+
+body {
+    background-image: url("../../assets/imgs/background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-menu {
+    width: 450px;
+    height: 700px;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-menu .user-login {
+    height: 83%;
+    background: var(--bg-color);
+    box-shadow: 0 0 5px rgb(63, 63, 63);
+}
+
+.login-menu .user-login-top,
+.login-menu .user-login-middle,
+.login-menu .user-login-bottom {
+    height: 33%;
+}
+
+.login-menu .user-login-top .logo-name {
+    font-family: "Instagram Sans Headline Regular", sans-serif;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+}
+
+.login-menu .user-login-middle .user-login-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-menu .user-login-middle .user-login-form .user-login-input {
+    height: 50px;
+    margin: 0 60px;
+    margin-top: -30px;
+    padding: 10px;
+    color: gray;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 2px grey;
+}
+
+.login-menu .user-login-middle .user-login-form .user-login-btn {
+    height: 50px;
+    margin: 0 60px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--bg-login-color);
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 0 5px gray;
+}
+
+.login-menu .user-login-spacer {
+    height: 1%;
+    margin: 0 60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-menu .user-login-spacer hr {
+    width: 45%;
+    height: 1px;
+    border-color: var(--spacer-color);
+}
+
+.login-menu .user-login-spacer .user-login-spacer-text {
+    margin-top: -8px;
+    color: gray;
+}
+
+.login-menu .user-login-bottom .user-login-facebook {
+    text-align: center;
+    color: #34528a;
+    font-size: 20px;
+    padding: 50px 0;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.login-menu .user-login-bottom .user-login-facebook a {
+    text-decoration: none;
+    color: #34528a;
+}
+
+.login-menu .user-login-bottom .user-login-forgotpassword {
+    text-align: center;
+}
+
+.login-menu .user-login-bottom .user-login-forgotpassword a {
+    border: none;
+    background-color: var(--bg-color);
+    color: gray;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.login-menu .new-user {
+    height: 15%;
+    background: var(--bg-color);
+    box-shadow: 0 0 5px rgb(63, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(63, 63, 63);
+}
+
+.login-menu .new-user a {
+    color: var(--bg-login-color);
+    text-decoration: none;
+}
